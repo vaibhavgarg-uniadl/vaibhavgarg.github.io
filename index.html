@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaibhav Garg — Data Engineer & AI/ML</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Animated grid background -->
+  <div class="bg-grid"></div>
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">VG<span class="dot-accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-eyebrow">
+      <span class="status-dot"></span>
+      <span>Open to work · Adelaide, Australia</span>
+    </div>
+    <h1 class="hero-name">Vaibhav<br/><span class="hero-name-alt">Garg</span></h1>
+    <p class="hero-title">Data Engineer <span class="sep">×</span> AI/ML Graduate <span class="sep">×</span> Cloud Architect</p>
+    <p class="hero-bio">
+      3 years building terabyte-scale ETL pipelines and distributed data systems at Impetus Technologies.
+      Now completing a Master of AI &amp; ML at the University of Adelaide (GPA 6.6/7.0) —
+      bridging engineering precision with machine intelligence.
+    </p>
+    <div class="hero-chips">
+      <span class="chip">PySpark</span>
+      <span class="chip">AWS</span>
+      <span class="chip">Snowflake</span>
+      <span class="chip">Python</span>
+      <span class="chip">SQL</span>
+      <span class="chip">Power BI</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="mailto:vaibhavgargindia01@gmail.com" class="btn-ghost">Get in Touch</a>
+    </div>
+    <!-- floating badge -->
+    <div class="hero-badge">
+      <div class="badge-inner">
+        <div class="badge-num">6.6</div>
+        <div class="badge-label">GPA / 7.0<br/>U of Adelaide</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS DASHBOARD -->
+  <section class="section stats-section" id="stats">
+    <div class="section-label">— dashboard</div>
+    <h2 class="section-title">By the Numbers</h2>
+    <div class="stats-grid">
+      <div class="stat-card" data-delay="0">
+        <div class="stat-value counter" data-target="3">0</div>
+        <div class="stat-unit">yrs</div>
+        <div class="stat-name">Industry Experience</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="100">
+        <div class="stat-value">TB</div>
+        <div class="stat-unit">scale</div>
+        <div class="stat-name">Data Migrated to AWS</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="200">
+        <div class="stat-value counter" data-target="30">0</div>
+        <div class="stat-unit">%</div>
+        <div class="stat-name">Pipeline Efficiency Gain</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:30%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="300">
+        <div class="stat-value counter" data-target="50">0</div>
+        <div class="stat-unit">+</div>
+        <div class="stat-name">Students Mentored</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:70%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="400">
+        <div class="stat-value counter" data-target="10">0</div>
+        <div class="stat-unit">+</div>
+        <div class="stat-name">Cultures Collaborated</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:50%"></div></div>
+      </div>
+      <div class="stat-card highlight-card" data-delay="500">
+        <div class="stat-value">🏅</div>
+        <div class="stat-unit">&nbsp;</div>
+        <div class="stat-name">Adelaide Graduate Award 2025</div>
+        <div class="stat-sub">Leadership · Volunteering · Community</div>
+      </div>
+    </div>
+
+    <!-- Skill radar chart -->
+    <div class="chart-container">
+      <div class="chart-label">— skill profile</div>
+      <canvas id="radarChart"></canvas>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-label">— timeline</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Jan 2024 — Dec 2025</div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <div>
+              <div class="tcard-role">Master of AI & Machine Learning</div>
+              <div class="tcard-company">University of Adelaide, Australia</div>
+            </div>
+            <span class="tcard-badge edu">Education</span>
+          </div>
+          <ul class="tcard-points">
+            <li>GPA 6.6 / 7.0 — top academic performance across ML, deep learning, and data systems</li>
+            <li>Recipient of the <strong>Adelaide Graduate Award</strong> — leadership, volunteering & community engagement</li>
+            <li>Academic Integrity Ambassador — conducted workshops for 50+ students</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-date">Aug 2021 — Dec 2023</div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <div>
+              <div class="tcard-role">Software Engineer – Data & Analytics</div>
+              <div class="tcard-company">Impetus Technologies, India</div>
+            </div>
+            <span class="tcard-badge work">Work</span>
+          </div>
+          <ul class="tcard-points">
+            <li>Migrated <strong>terabyte-scale data</strong> from on-premise to AWS using PySpark, Glue & S3 — zero data loss</li>
+            <li>Optimised Apache Spark workflows, <strong>cutting execution time by 30%</strong> on production pipelines</li>
+            <li>Designed SQL transformation logic powering enterprise BI & reporting systems</li>
+            <li>Built cost-efficient architectures across AWS Lambda, EC2, S3, and Glue</li>
+            <li>Delivered analytics-ready datasets for cross-functional downstream applications</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2017 — 2021</div>
+        <div class="timeline-card">
+          <div class="tcard-header">
+            <div>
+              <div class="tcard-role">Bachelor of Computer Science</div>
+              <div class="tcard-company">Rajasthan Technical University, India</div>
+            </div>
+            <span class="tcard-badge edu">Education</span>
+          </div>
+          <ul class="tcard-points">
+            <li>Graduated with <strong>80%</strong> — strong foundation in CS, algorithms, and software engineering</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-label">— work</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card">
+        <div class="proj-num">01</div>
+        <div class="proj-tag-row">
+          <span class="proj-tag">AWS</span>
+          <span class="proj-tag">Snowflake</span>
+          <span class="proj-tag">GCP</span>
+        </div>
+        <h3 class="proj-title">Pelmorex — Cloud Data Optimization</h3>
+        <p class="proj-desc">Built and optimised multi-cloud data pipelines across AWS, Snowflake, and GCP. Automated ingestion and transformation workflows, reducing manual effort by 30% and improving pipeline reliability at scale.</p>
+        <div class="proj-impact">
+          <span class="impact-pill">↓ 30% manual effort</span>
+          <span class="impact-pill">Multi-cloud</span>
+        </div>
+        <a href="#" class="proj-link">View Repo →</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">02</div>
+        <div class="proj-tag-row">
+          <span class="proj-tag">PySpark</span>
+          <span class="proj-tag">AWS Glue</span>
+          <span class="proj-tag">S3</span>
+        </div>
+        <h3 class="proj-title">Terabyte-Scale ETL Pipeline</h3>
+        <p class="proj-desc">Designed and deployed a distributed ETL pipeline migrating TB-scale enterprise data from on-premise to AWS cloud. Reduced pipeline execution time by 30% through Spark optimisation and parallel processing.</p>
+        <div class="proj-impact">
+          <span class="impact-pill">↓ 30% exec time</span>
+          <span class="impact-pill">TB-scale</span>
+        </div>
+        <a href="#" class="proj-link">View Repo →</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">03</div>
+        <div class="proj-tag-row">
+          <span class="proj-tag">Spring Boot</span>
+          <span class="proj-tag">Angular</span>
+          <span class="proj-tag">REST APIs</span>
+        </div>
+        <h3 class="proj-title">Risk Management System</h3>
+        <p class="proj-desc">Developed role-based REST APIs and an Angular 8 dashboard for a loan eligibility and risk management system. Enabled secure multi-client data access and improved decision-making accuracy.</p>
+        <div class="proj-impact">
+          <span class="impact-pill">Role-based auth</span>
+          <span class="impact-pill">Multi-client</span>
+        </div>
+        <a href="#" class="proj-link">View Repo →</a>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">04</div>
+        <div class="proj-tag-row">
+          <span class="proj-tag">SQL</span>
+          <span class="proj-tag">Power BI</span>
+          <span class="proj-tag">Snowflake</span>
+        </div>
+        <h3 class="proj-title">Analytics-Ready Data Layer</h3>
+        <p class="proj-desc">Designed consistent schema architectures and data models to support reliable BI reporting. Delivered analytics-ready datasets consumed by multiple downstream business intelligence and reporting teams.</p>
+        <div class="proj-impact">
+          <span class="impact-pill">Enterprise BI</span>
+          <span class="impact-pill">Schema design</span>
+        </div>
+        <a href="#" class="proj-link">View Repo →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-label">— stack</div>
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="skills-wrapper">
+
+      <div class="skill-group">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-blue">Python</span>
+          <span class="skill-pill s-blue">SQL</span>
+          <span class="skill-pill s-blue">PySpark</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Big Data</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-orange">Apache Spark</span>
+          <span class="skill-pill s-orange">Hadoop</span>
+          <span class="skill-pill s-orange">Hive</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Cloud</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-yellow">AWS S3</span>
+          <span class="skill-pill s-yellow">AWS Glue</span>
+          <span class="skill-pill s-yellow">Lambda</span>
+          <span class="skill-pill s-yellow">EC2</span>
+          <span class="skill-pill s-yellow">GCP</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Data Warehousing</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-teal">Snowflake</span>
+          <span class="skill-pill s-teal">Data Modelling</span>
+          <span class="skill-pill s-teal">ETL/ELT</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">AI & ML</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-purple">Scikit-learn</span>
+          <span class="skill-pill s-purple">TensorFlow</span>
+          <span class="skill-pill s-purple">NLP</span>
+          <span class="skill-pill s-purple">Predictive Modelling</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-title">Visualisation & Tools</div>
+        <div class="skill-pills">
+          <span class="skill-pill s-green">Power BI</span>
+          <span class="skill-pill s-green">Git</span>
+          <span class="skill-pill s-green">REST APIs</span>
+          <span class="skill-pill s-green">Jupyter</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications -->
+    <div class="certs-row">
+      <div class="cert-card">
+        <div class="cert-icon">📜</div>
+        <div>
+          <div class="cert-name">Advanced Microsoft Power BI</div>
+          <div class="cert-issuer">Edureka · Mar 2026</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">☁️</div>
+        <div>
+          <div class="cert-name">AWS Fundamentals Specialization</div>
+          <div class="cert-issuer">Amazon Web Services · Sep 2020</div>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🐍</div>
+        <div>
+          <div class="cert-name">Python for Everybody</div>
+          <div class="cert-issuer">University of Michigan · Jul 2020</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label">— contact</div>
+    <h2 class="section-title">Let's Build Something</h2>
+    <p class="contact-sub">Actively seeking Data Engineer, ML Engineer & Data Analyst roles in Australia.</p>
+    <div class="contact-links">
+      <a href="mailto:vaibhavgargindia01@gmail.com" class="contact-btn">
+        <span class="contact-icon">✉</span> vaibhavgargindia01@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/vaibhavgarg003" target="_blank" class="contact-btn">
+        <span class="contact-icon">in</span> linkedin.com/in/vaibhavgarg003
+      </a>
+      <a href="https://github.com/vaibhavgarg003" target="_blank" class="contact-btn">
+        <span class="contact-icon">⌥</span> github.com/vaibhavgarg003
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2025 Vaibhav Garg</span>
+    <span>Built with purpose · Adelaide, AU</span>
+  </footer>
+
+  <script>
+    // Counter animation
+    function animateCounters() {
+      document.querySelectorAll('.counter').forEach(el => {
+        const target = +el.dataset.target;
+        let current = 0;
+        const step = target / 40;
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          el.textContent = Math.floor(current);
+        }, 30);
+      });
+    }
+
+    // Intersection observer for section reveals
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          if (e.target.id === 'stats') animateCounters();
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section, .stat-card, .proj-card, .timeline-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Radar Chart
+    const ctx = document.getElementById('radarChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: ['Python / SQL', 'Big Data', 'Cloud (AWS/GCP)', 'Data Warehousing', 'ML / AI', 'Visualisation'],
+        datasets: [{
+          label: 'Vaibhav Garg',
+          data: [90, 85, 80, 85, 70, 75],
+          backgroundColor: 'rgba(0, 212, 170, 0.15)',
+          borderColor: '#00d4aa',
+          borderWidth: 2,
+          pointBackgroundColor: '#00d4aa',
+          pointRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          r: {
+            min: 0, max: 100,
+            ticks: { display: false },
+            grid: { color: 'rgba(255,255,255,0.08)' },
+            angleLines: { color: 'rgba(255,255,255,0.08)' },
+            pointLabels: {
+              color: '#a0aec0',
+              font: { family: 'DM Mono', size: 12 }
+            }
+          }
+        }
+      }
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
