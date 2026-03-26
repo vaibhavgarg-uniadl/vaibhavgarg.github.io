@@ -34,7 +34,8 @@
       <span>Based in Australia · Full Work Rights · Available Immediately</span>
     </div>
     <h1 class="hero-name">
-      Vaibhav <span class="hero-name-alt">Garg</span>
+      <span class="name-first">Vaibhav</span>
+      <span class="name-last">Garg</span>
     </h1>
     <p class="hero-title">Data Engineer <span class="sep">×</span> AI/ML Graduate <span class="sep">×</span> Cloud Architect</p>
     <p class="hero-bio">
@@ -72,42 +73,59 @@
   </section>
 
   <!-- STATS DASHBOARD -->
-  <section class="section stats-section" id="stats">
-    <div class="section-label">— dashboard</div>
-    <h2 class="section-title">By the Numbers</h2>
-    <div class="stats-grid">
-      <div class="stat-card" data-delay="0">
-        <div class="stat-value">3+</div>
-        <div class="stat-unit">yrs</div>
-        <div class="stat-name">Industry Experience</div>
-        <div class="stat-bar"><div class="stat-bar-fill" style="width:60%"></div></div>
-      </div>
-      <div class="stat-card" data-delay="100">
-        <div class="stat-value">10+</div>
-        <div class="stat-unit">TB</div>
-        <div class="stat-name">Data Migrated to AWS</div>
-        <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
-      </div>
-      <div class="stat-card" data-delay="200">
-        <div class="stat-value counter" data-target="30">0</div>
-        <div class="stat-unit">%</div>
-        <div class="stat-name">Reduced Pipeline Execution Time</div>
-        <div class="stat-bar"><div class="stat-bar-fill" style="width:30%"></div></div>
-      </div>
-      <div class="stat-card highlight-card" data-delay="500">
-        <div class="stat-value">🏅</div>
-        <div class="stat-unit">&nbsp;</div>
-        <div class="stat-name">Adelaide Graduate Award 2025</div>
-        <div class="stat-sub">Leadership · Volunteering · Community</div>
+<section class="section stats-section" id="stats">
+  <div class="section-label">— dashboard</div>
+  <h2 class="section-title">By the Numbers</h2>
+
+  <div class="stats-grid">
+
+    <!-- Experience -->
+    <div class="stat-card">
+      <div class="stat-value">3+</div>
+      <div class="stat-unit">yrs</div>
+      <div class="stat-name">Industry Experience</div>
+      <div class="stat-bar">
+        <div class="stat-bar-fill" style="width:65%"></div>
       </div>
     </div>
 
-    <!-- Skill radar chart -->
-    <div class="chart-container">
-      <div class="chart-label">— skill profile</div>
-      <canvas id="radarChart"></canvas>
+    <!-- Data Scale -->
+    <div class="stat-card">
+      <div class="stat-value">10+</div>
+      <div class="stat-unit">TB</div>
+      <div class="stat-name">Data Processed & Migrated</div>
+      <div class="stat-bar">
+        <div class="stat-bar-fill" style="width:85%"></div>
+      </div>
     </div>
-  </section>
+
+    <!-- Performance -->
+    <div class="stat-card">
+      <div class="stat-value counter" data-target="30">0</div>
+      <div class="stat-unit">%</div>
+      <div class="stat-name">Reduced Pipeline Execution Time</div>
+      <div class="stat-bar">
+        <div class="stat-bar-fill" style="width:30%"></div>
+      </div>
+    </div>
+
+    <!-- Award -->
+    <div class="stat-card highlight-card">
+      <div class="stat-value">🏅</div>
+      <div class="stat-unit"></div>
+      <div class="stat-name">Adelaide Graduate Award</div>
+      <div class="stat-sub">Leadership · Volunteering · Community Impact</div>
+    </div>
+
+  </div>
+
+  <!-- Skill radar chart -->
+  <div class="chart-container">
+    <div class="chart-label">— skill profile</div>
+    <canvas id="radarChart"></canvas>
+  </div>
+
+</section>
 
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
